@@ -92,12 +92,14 @@ def sqlGenomeViewer(data):
     return HttpResponse(response)
 
 def getChromosomeBoundaries():
-    #We query the database for min and max positions for each chromosome
-    sqlQuery = "SELECT chromosome, MIN(position) as min, MAX(position) as max FROM marqueurs GROUP BY chromosome;"
-    chrBoundaries = connect.fetchData(sqlQuery)
+    chr_bounderies_dict={'chromosome':[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22],          #dictionnary with chromosome bounderies
+                'min':[0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0,  0, 0, 0, 0, 0, 0,0],
+                'max':[248956422,242193529,198295559,190214555,181538259,170805979,159345973,145138636,138394717,133797422,135086622,133275309,114364328,107043718,101991189,90338345,83257441, 80373285,58617616,64444167,46709983,50818468]
+                }
+    chrBoundaries=pandas.DataFrame(chr_bounderies_dict) # transform to pandas
     return buildJsonData(chrBoundaries)
 
-def fetchValidRsids(rows):
+def fetchValidRsids(rows):  # TO BE REPLACED
     #This code was used back when we only searched for matching rsids (no position or chromosome).
     #print "rsids"
     #print rsids
