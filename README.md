@@ -1,3 +1,4 @@
+![alt text](https://github.com/BigDataehealthTools/GNOME_Viewer/blob/master/GNOME_Viewer/public/img/GenomeViewer_logo.png)
 # What you need to run the project #
 
 1. Have Python 2.7.8 (or higher) installed
