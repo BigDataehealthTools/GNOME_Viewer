@@ -1,0 +1,45 @@
+{
+  "name": "goat_frontend_application",
+  "version": "1.0.0",
+  "description": "This is GNOME Viewer's React based front-end application",
+  "main": "server.js",
+  "scripts": {
+    "start": "watchify src/main.jsx -v -t [babelify --presets [ react ] ] -o ../public/js/main.js",
+    "watch": "gulp"
+  },
+  "keywords": [
+    "react",
+    "skeleton",
+    "babel",
+    "browserify",
+    "babelify"
+  ],
+  "author": "Victor Dupuy",
+  "license": "Apache v2",
+  "dependencies": {
+    "amcharts3": "amcharts/amcharts3",
+    "amcharts3-react": "amcharts/amcharts3-react",
+    "amcharts3-export": "amcharts/export",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "d3": "^3.5.14",
+    "griddle-react": "^0.3.1",
+    "history": "^1.17.0",
+    "node-validator": "^0.1.21",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-dropzone": "^3.10.0",
+    "react-router": "^1.0.3",
+    "reflux": "^0.3.0",
+    "underscore": "^1.8.3",
+    "watchify": "^3.7.0"
+  },
+  "devDependencies": {
+    "debug": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.1",
+    "invariant": "^2.2.0",
+    "repeating": "^2.0.0"
+  }
+}

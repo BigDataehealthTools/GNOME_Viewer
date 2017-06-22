@@ -1,0 +1,1305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Django default">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="hits-of-opti-tera">
+      <Visible>1</Visible>
+    </schema>
+    <table id="3" parent="2" name="GeneQuery_searchgene"/>
+    <table id="4" parent="2" name="affy_s_rs"/>
+    <table id="5" parent="2" name="assoc">
+      <Comment>table de resultats</Comment>
+    </table>
+    <table id="6" parent="2" name="auth_group"/>
+    <table id="7" parent="2" name="auth_group_permissions"/>
+    <table id="8" parent="2" name="auth_permission"/>
+    <table id="9" parent="2" name="auth_user"/>
+    <table id="10" parent="2" name="auth_user_groups"/>
+    <table id="11" parent="2" name="auth_user_user_permissions"/>
+    <table id="12" parent="2" name="covariate"/>
+    <table id="13" parent="2" name="dataset"/>
+    <table id="14" parent="2" name="django_admin_log"/>
+    <table id="15" parent="2" name="django_content_type"/>
+    <table id="16" parent="2" name="django_migrations"/>
+    <table id="17" parent="2" name="django_session"/>
+    <table id="18" parent="2" name="experiment">
+      <Comment>Une table de traçabilitée</Comment>
+    </table>
+    <table id="19" parent="2" name="genes"/>
+    <table id="20" parent="2" name="hg_rs_history"/>
+    <table id="21" parent="2" name="marq_gene"/>
+    <table id="22" parent="2" name="marqueurs"/>
+    <table id="23" parent="2" name="person"/>
+    <table id="24" parent="2" name="person_dataset"/>
+    <table id="25" parent="2" name="phen_id_val"/>
+    <table id="26" parent="2" name="phenotypes"/>
+    <table id="27" parent="2" name="previous_gene_hugo"/>
+    <table id="28" parent="2" name="synonym_gene_hugo"/>
+    <table id="29" parent="2" name="users"/>
+    <column id="30" parent="3" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="3" name="rs_ID">
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="32" parent="3" name="gene">
+      <DataType>varchar(300)|0</DataType>
+    </column>
+    <column id="33" parent="3" name="threshold">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="34" parent="3" name="chromosome">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="35" parent="3" name="pos">
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="36" parent="3" name="phenotype">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="37" parent="3" name="allele_A">
+      <DataType>varchar(1)|0</DataType>
+    </column>
+    <column id="38" parent="3" name="allele_B">
+      <DataType>varchar(1)|0</DataType>
+    </column>
+    <column id="39" parent="3" name="pvalue_assoc">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="40" parent="3" name="beta_assoc">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="41" parent="3" name="maf">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="42" parent="3" name="imputed">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="43" parent="3" name="cohort_AA">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="44" parent="3" name="cohort_AB">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="45" parent="3" name="cohort_BB">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="46" parent="3" name="patent">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="47" parent="3" name="covariate">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="48" parent="3" name="direction">
+      <DataType>varchar(1)|0</DataType>
+    </column>
+    <column id="49" parent="3" name="se_assoc">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="50" parent="3" name="cases_AA">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="51" parent="3" name="cases_AB">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="52" parent="3" name="cases_BB">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="53" parent="3" name="controls_AA">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="54" parent="3" name="controls_AB">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="55" parent="3" name="controls_BB">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="56" parent="3" name="allele_A_freq">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="57" parent="3" name="allele_B_freq">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="58" parent="3" name="cases_maf">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="59" parent="3" name="controls_maf">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="60" parent="3" name="miss_dat_prop">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="61" parent="3" name="cohort_hwe">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="62" parent="3" name="cases_hwe">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="63" parent="3" name="controls_hwe">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="64" parent="3" name="het_OR">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="65" parent="3" name="het_OR_lower">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="66" parent="3" name="het_OR_upper">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="67" parent="3" name="all_OR">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="68" parent="3" name="all_OR_lower">
+      <DataType>double|0</DataType>
+    </column>
+    <column id="69" parent="3" name="all_OR_upper">
+      <DataType>double|0</DataType>
+    </column>
+    <key id="70" parent="3" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="71" parent="4" name="id_s">
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="4" name="id_rs">
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="73" parent="4" name="affy_5">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="74" parent="4" name="affy_6">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="75" parent="4" name="PRIMARY">
+      <ColNames>id_s</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="76" parent="5" name="idassoc">
+      <DataType>bigint(20) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="5" name="experiment">
+      <Comment>Un id vers une table de</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="78" parent="5" name="rs_id_assoc">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="79" parent="5" name="chromosome">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="80" parent="5" name="pos">
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="81" parent="5" name="allele_A">
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="82" parent="5" name="allele_B">
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="83" parent="5" name="av_max_post_call">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="84" parent="5" name="info_imp">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="85" parent="5" name="cohort_AA">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="86" parent="5" name="cohort_AB">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="87" parent="5" name="cohort_BB">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="88" parent="5" name="cohort_NULL">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="89" parent="5" name="cases_AA">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="90" parent="5" name="cases_AB">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="91" parent="5" name="cases_BB">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="92" parent="5" name="controls_AA">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="93" parent="5" name="controls_AB">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="94" parent="5" name="controls_BB">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="95" parent="5" name="allele_A_freq">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="96" parent="5" name="allele_B_freq">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="97" parent="5" name="maf">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="98" parent="5" name="cases_maf">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="99" parent="5" name="controls_maf">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="100" parent="5" name="miss_dat_prop">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="101" parent="5" name="cohort_hwe">
+      <DataType>double unsigned|0</DataType>
+    </column>
+    <column id="102" parent="5" name="cases_hwe">
+      <DataType>double unsigned|0</DataType>
+    </column>
+    <column id="103" parent="5" name="controls_hwe">
+      <DataType>double unsigned|0</DataType>
+    </column>
+    <column id="104" parent="5" name="het_OR">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="105" parent="5" name="het_OR_lower">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="106" parent="5" name="het_OR_upper">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="107" parent="5" name="hom_OR">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="108" parent="5" name="hom_OR_lower">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="109" parent="5" name="hom_OR_upper">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="110" parent="5" name="all_OR">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="111" parent="5" name="all_OR_lower">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="112" parent="5" name="all_OR_upper">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="113" parent="5" name="pvalue_assoc">
+      <DataType>double unsigned|0</DataType>
+    </column>
+    <column id="114" parent="5" name="info_assoc">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="115" parent="5" name="beta_assoc">
+      <DataType>float|0</DataType>
+    </column>
+    <column id="116" parent="5" name="se_assoc">
+      <DataType>float|0</DataType>
+    </column>
+    <index id="117" parent="5" name="fk_assoc_1_idx">
+      <ColNames>experiment</ColNames>
+    </index>
+    <index id="118" parent="5" name="fk_assoc_4">
+      <ColNames>rs_id_assoc</ColNames>
+    </index>
+    <index id="119" parent="5" name="fk_assoc_5">
+      <ColNames>rs_id_assoc
+experiment</ColNames>
+    </index>
+    <key id="120" parent="5" name="PRIMARY">
+      <ColNames>idassoc</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="121" parent="5" name="fk_assoc_1">
+      <ColNames>experiment</ColNames>
+      <RefTableName>experiment</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>idexperiment</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="122" parent="5" name="fk_assoc_4">
+      <ColNames>rs_id_assoc</ColNames>
+      <RefKeyName>marqueurs</RefKeyName>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="123" parent="6" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="124" parent="6" name="name">
+      <DataType>varchar(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="125" parent="6" name="name">
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="126" parent="6" name="name">
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>name</UnderlyingIndexName>
+    </key>
+    <key id="127" parent="6" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="128" parent="7" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="129" parent="7" name="group_id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="130" parent="7" name="permission_id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="131" parent="7" name="auth_group__permission_id_1f49ccbbdc69d2fc_fk_auth_permission_id">
+      <ColNames>permission_id</ColNames>
+    </index>
+    <index id="132" parent="7" name="group_id">
+      <ColNames>group_id
+permission_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="133" parent="7" name="group_id">
+      <ColNames>group_id
+permission_id</ColNames>
+      <UnderlyingIndexName>group_id</UnderlyingIndexName>
+    </key>
+    <key id="134" parent="7" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="135" parent="7" name="auth_group_permission_group_id_689710a9a73b7457_fk_auth_group_id">
+      <ColNames>group_id</ColNames>
+      <RefTableName>auth_group</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="136" parent="7" name="auth_group__permission_id_1f49ccbbdc69d2fc_fk_auth_permission_id">
+      <ColNames>permission_id</ColNames>
+      <RefTableName>auth_permission</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="137" parent="8" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="138" parent="8" name="name">
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="139" parent="8" name="content_type_id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="140" parent="8" name="codename">
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="141" parent="8" name="content_type_id">
+      <ColNames>content_type_id
+codename</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="142" parent="8" name="content_type_id">
+      <ColNames>content_type_id
+codename</ColNames>
+      <UnderlyingIndexName>content_type_id</UnderlyingIndexName>
+    </key>
+    <key id="143" parent="8" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="144" parent="8" name="auth__content_type_id_508cf46651277a81_fk_django_content_type_id">
+      <ColNames>content_type_id</ColNames>
+      <RefTableName>django_content_type</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="145" parent="9" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="146" parent="9" name="password">
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="147" parent="9" name="last_login">
+      <DataType>datetime(6)|0</DataType>
+    </column>
+    <column id="148" parent="9" name="is_superuser">
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="149" parent="9" name="username">
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="150" parent="9" name="first_name">
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="151" parent="9" name="last_name">
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="152" parent="9" name="email">
+      <DataType>varchar(254)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="153" parent="9" name="is_staff">
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="154" parent="9" name="is_active">
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="155" parent="9" name="date_joined">
+      <DataType>datetime(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="156" parent="9" name="username">
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="157" parent="9" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="158" parent="9" name="username">
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>username</UnderlyingIndexName>
+    </key>
+    <column id="159" parent="10" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="160" parent="10" name="user_id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="161" parent="10" name="group_id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="162" parent="10" name="auth_user_groups_group_id_33ac548dcf5f8e37_fk_auth_group_id">
+      <ColNames>group_id</ColNames>
+    </index>
+    <index id="163" parent="10" name="user_id">
+      <ColNames>user_id
+group_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="164" parent="10" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="165" parent="10" name="user_id">
+      <ColNames>user_id
+group_id</ColNames>
+      <UnderlyingIndexName>user_id</UnderlyingIndexName>
+    </key>
+    <foreign-key id="166" parent="10" name="auth_user_groups_group_id_33ac548dcf5f8e37_fk_auth_group_id">
+      <ColNames>group_id</ColNames>
+      <RefTableName>auth_group</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="167" parent="10" name="auth_user_groups_user_id_4b5ed4ffdb8fd9b0_fk_auth_user_id">
+      <ColNames>user_id</ColNames>
+      <RefTableName>auth_user</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="168" parent="11" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="169" parent="11" name="user_id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="170" parent="11" name="permission_id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="171" parent="11" name="auth_user_u_permission_id_384b62483d7071f0_fk_auth_permission_id">
+      <ColNames>permission_id</ColNames>
+    </index>
+    <index id="172" parent="11" name="user_id">
+      <ColNames>user_id
+permission_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="173" parent="11" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="174" parent="11" name="user_id">
+      <ColNames>user_id
+permission_id</ColNames>
+      <UnderlyingIndexName>user_id</UnderlyingIndexName>
+    </key>
+    <foreign-key id="175" parent="11" name="auth_user_user_permissi_user_id_7f0938558328534a_fk_auth_user_id">
+      <ColNames>user_id</ColNames>
+      <RefTableName>auth_user</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="176" parent="11" name="auth_user_u_permission_id_384b62483d7071f0_fk_auth_permission_id">
+      <ColNames>permission_id</ColNames>
+      <RefTableName>auth_permission</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="177" parent="12" name="idcovariate">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="178" parent="12" name="idexperiment">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="179" parent="12" name="idphenotypes">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="180" parent="12" name="fk_covariate_1_idx">
+      <ColNames>idexperiment</ColNames>
+    </index>
+    <index id="181" parent="12" name="fk_covariate_2_idx">
+      <ColNames>idphenotypes</ColNames>
+    </index>
+    <key id="182" parent="12" name="PRIMARY">
+      <ColNames>idcovariate</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="183" parent="12" name="fk_covariate_1">
+      <ColNames>idexperiment</ColNames>
+      <RefTableName>experiment</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>idexperiment</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="184" parent="12" name="fk_covariate_2">
+      <ColNames>idphenotypes</ColNames>
+      <RefTableName>phenotypes</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>idphenotypes</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="185" parent="13" name="iddataset">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="186" parent="13" name="name">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="187" parent="13" name="description_dataset">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="188" parent="13" name="cohort">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="189" parent="13" name="cohort_description">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="190" parent="13" name="build_id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="191" parent="13" name="PRIMARY">
+      <ColNames>iddataset</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="192" parent="14" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="193" parent="14" name="action_time">
+      <DataType>datetime(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="194" parent="14" name="object_id">
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="195" parent="14" name="object_repr">
+      <DataType>varchar(200)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="196" parent="14" name="action_flag">
+      <DataType>smallint(5) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="197" parent="14" name="change_message">
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="198" parent="14" name="content_type_id">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="199" parent="14" name="user_id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="200" parent="14" name="django_admin_log_user_id_52fdd58701c5f563_fk_auth_user_id">
+      <ColNames>user_id</ColNames>
+    </index>
+    <index id="201" parent="14" name="djang_content_type_id_697914295151027a_fk_django_content_type_id">
+      <ColNames>content_type_id</ColNames>
+    </index>
+    <key id="202" parent="14" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="203" parent="14" name="django_admin_log_user_id_52fdd58701c5f563_fk_auth_user_id">
+      <ColNames>user_id</ColNames>
+      <RefTableName>auth_user</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="204" parent="14" name="djang_content_type_id_697914295151027a_fk_django_content_type_id">
+      <ColNames>content_type_id</ColNames>
+      <RefTableName>django_content_type</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="205" parent="15" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="206" parent="15" name="app_label">
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="207" parent="15" name="model">
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="208" parent="15" name="django_content_type_app_label_45f3b1d93ec8c61c_uniq">
+      <ColNames>app_label
+model</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="209" parent="15" name="django_content_type_app_label_45f3b1d93ec8c61c_uniq">
+      <ColNames>app_label
+model</ColNames>
+      <UnderlyingIndexName>django_content_type_app_label_45f3b1d93ec8c61c_uniq</UnderlyingIndexName>
+    </key>
+    <key id="210" parent="15" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="211" parent="16" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="212" parent="16" name="app">
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="213" parent="16" name="name">
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="214" parent="16" name="applied">
+      <DataType>datetime(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="215" parent="16" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="216" parent="17" name="session_key">
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="217" parent="17" name="session_data">
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="218" parent="17" name="expire_date">
+      <DataType>datetime(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="219" parent="17" name="django_session_de54fa62">
+      <ColNames>expire_date</ColNames>
+    </index>
+    <key id="220" parent="17" name="PRIMARY">
+      <ColNames>session_key</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="221" parent="18" name="idexperiment">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="222" parent="18" name="idusers">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="223" parent="18" name="date_exp">
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="224" parent="18" name="version_script">
+      <DataType>decimal(10)|0</DataType>
+    </column>
+    <column id="225" parent="18" name="verstion_algo">
+      <DataType>decimal(10)|0</DataType>
+    </column>
+    <column id="226" parent="18" name="post_process">
+      <DataType>text|0</DataType>
+    </column>
+    <column id="227" parent="18" name="note">
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="228" parent="18" name="dataset">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="229" parent="18" name="phenotype">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="230" parent="18" name="covariates">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="231" parent="18" name="experiment_approved">
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <index id="232" parent="18" name="fk_assoc_2">
+      <ColNames>dataset</ColNames>
+    </index>
+    <index id="233" parent="18" name="fk_assoc_3">
+      <ColNames>phenotype</ColNames>
+    </index>
+    <index id="234" parent="18" name="fk_experiment_1_idx">
+      <ColNames>idusers</ColNames>
+    </index>
+    <key id="235" parent="18" name="PRIMARY">
+      <ColNames>idexperiment</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="236" parent="18" name="fk_assoc_2">
+      <ColNames>dataset</ColNames>
+      <RefTableName>dataset</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>iddataset</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="237" parent="18" name="fk_assoc_3">
+      <ColNames>phenotype</ColNames>
+      <RefTableName>phenotypes</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>idphenotypes</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="238" parent="18" name="fk_experiment_1">
+      <ColNames>idusers</ColNames>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>idusers</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="239" parent="19" name="idgenes">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="240" parent="19" name="symbol">
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="241" parent="19" name="approved">
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="242" parent="19" name="type">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="243" parent="19" name="longname">
+      <DataType>varchar(250)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="244" parent="19" name="note">
+      <DataType>text|0</DataType>
+    </column>
+    <index id="245" parent="19" name="symbol_idx">
+      <ColNames>symbol</ColNames>
+    </index>
+    <key id="246" parent="19" name="PRIMARY">
+      <ColNames>idgenes</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="247" parent="20" name="idhg_rs_history">
+      <Comment>Table pour la traduction</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="248" parent="20" name="rsHigh">
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="249" parent="20" name="rsLow">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="250" parent="20" name="build_id">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="251" parent="20" name="orien">
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="252" parent="20" name="create_time">
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="253" parent="20" name="last_updated_time">
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="254" parent="20" name="rsCurrent">
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="255" parent="20" name="orien2Current">
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <key id="256" parent="20" name="PRIMARY">
+      <ColNames>idhg_rs_history</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="257" parent="21" name="idmarq_gene">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="258" parent="21" name="idmarqueurs">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="259" parent="21" name="nom">
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="260" parent="21" name="build_id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="261" parent="21" name="idgenes">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="262" parent="21" name="symbol">
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="263" parent="21" name="pos">
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="264" parent="21" name="dist">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="265" parent="21" name="strand">
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="266" parent="21" name="anot">
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <index id="267" parent="21" name="fk_marq_gene_1">
+      <ColNames>idmarqueurs</ColNames>
+    </index>
+    <index id="268" parent="21" name="fk_marq_gene_1_idx">
+      <ColNames>idgenes</ColNames>
+    </index>
+    <index id="269" parent="21" name="marqueur_idx_3">
+      <ColNames>nom
+build_id</ColNames>
+    </index>
+    <key id="270" parent="21" name="PRIMARY">
+      <ColNames>idmarq_gene</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="271" parent="21" name="fk_marq_gene_1">
+      <ColNames>idmarqueurs</ColNames>
+      <RefTableName>marqueurs</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>idmarqueurs</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="272" parent="21" name="fk_marq_gene_2">
+      <ColNames>idgenes</ColNames>
+      <RefTableName>genes</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>idgenes</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="273" parent="22" name="idmarqueurs">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="274" parent="22" name="nom">
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="275" parent="22" name="sorte">
+      <DataType>tinyint(4)|0</DataType>
+    </column>
+    <column id="276" parent="22" name="chromosome">
+      <DataType>tinyint(4)|0</DataType>
+    </column>
+    <column id="277" parent="22" name="position">
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="278" parent="22" name="build_id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="279" parent="22" name="remapped_from_hg18">
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="280" parent="22" name="refNCBI">
+      <DataType>varchar(5)|0</DataType>
+    </column>
+    <column id="281" parent="22" name="observed">
+      <DataType>varchar(5)|0</DataType>
+    </column>
+    <column id="282" parent="22" name="classe">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="283" parent="22" name="func">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="284" parent="22" name="frame">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="285" parent="22" name="codons">
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="286" parent="22" name="peptides">
+      <DataType>varchar(5)|0</DataType>
+    </column>
+    <column id="287" parent="22" name="gene">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="288" parent="22" name="gene_strand">
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="289" parent="22" name="start_gen">
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="290" parent="22" name="end_gen">
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="291" parent="22" name="gene_before">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="292" parent="22" name="gene_before_strand">
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="293" parent="22" name="dist_gen_before">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="294" parent="22" name="start_gen_before">
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="295" parent="22" name="end_gen_before">
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="296" parent="22" name="gene_after">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="297" parent="22" name="gene_after_strand">
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="298" parent="22" name="dist_gen_after">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="299" parent="22" name="start_gen_after">
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="300" parent="22" name="end_gen_after">
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="301" parent="22" name="idgenes">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="302" parent="22" name="geneaf_idx">
+      <ColNames>gene_after</ColNames>
+    </index>
+    <index id="303" parent="22" name="genebe_idx">
+      <ColNames>gene_before</ColNames>
+    </index>
+    <index id="304" parent="22" name="gene_idx">
+      <ColNames>gene</ColNames>
+    </index>
+    <index id="305" parent="22" name="idx_marqueurs_chromosome_position_build_id">
+      <ColNames>chromosome
+position
+build_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="306" parent="22" name="idx_marqueurs_nom_build_id">
+      <ColNames>nom
+build_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="307" parent="22" name="idx_marqueurs_chromosome_position_build_id">
+      <ColNames>chromosome
+position
+build_id</ColNames>
+      <UnderlyingIndexName>idx_marqueurs_chromosome_position_build_id</UnderlyingIndexName>
+    </key>
+    <key id="308" parent="22" name="idx_marqueurs_nom_build_id">
+      <ColNames>nom
+build_id</ColNames>
+      <UnderlyingIndexName>idx_marqueurs_nom_build_id</UnderlyingIndexName>
+    </key>
+    <key id="309" parent="22" name="PRIMARY">
+      <ColNames>idmarqueurs</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="310" parent="23" name="idperson">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="311" parent="23" name="sex">
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="312" parent="23" name="age">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="313" parent="23" name="dob">
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="314" parent="23" name="ethnic_code">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="315" parent="23" name="country_name">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="316" parent="23" name="region_name">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="317" parent="23" name="centre_name">
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="318" parent="23" name="sample">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="319" parent="23" name="comment">
+      <DataType>text|0</DataType>
+    </column>
+    <key id="320" parent="23" name="PRIMARY">
+      <ColNames>idperson</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="321" parent="24" name="idperson_dataset">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="322" parent="24" name="idperson">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="323" parent="24" name="iddataset">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="324" parent="24" name="fk_person_dataset_1_idx">
+      <ColNames>iddataset</ColNames>
+    </index>
+    <index id="325" parent="24" name="fk_person_dataset_2_idx">
+      <ColNames>idperson</ColNames>
+    </index>
+    <key id="326" parent="24" name="PRIMARY">
+      <ColNames>idperson_dataset</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="327" parent="24" name="fk_person_dataset_1">
+      <ColNames>iddataset</ColNames>
+      <RefTableName>dataset</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>iddataset</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="328" parent="24" name="fk_person_dataset_2">
+      <ColNames>idperson</ColNames>
+      <RefTableName>person</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>idperson</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="329" parent="25" name="idphen_id_val">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="330" parent="25" name="idphenotypes">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="331" parent="25" name="idperson">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="332" parent="25" name="value">
+      <DataType>float|0</DataType>
+    </column>
+    <index id="333" parent="25" name="fk_phen_id_val_1_idx">
+      <ColNames>idperson</ColNames>
+    </index>
+    <index id="334" parent="25" name="forkey1_idx">
+      <ColNames>idphenotypes</ColNames>
+    </index>
+    <key id="335" parent="25" name="PRIMARY">
+      <ColNames>idphen_id_val</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="336" parent="25" name="fk_phen_id_val_1">
+      <ColNames>idperson</ColNames>
+      <RefTableName>person</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>idperson</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="337" parent="25" name="forkey1">
+      <ColNames>idphenotypes</ColNames>
+      <RefTableName>phenotypes</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>idphenotypes</RefColNames>
+      <OnUpdate>restrict</OnUpdate>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="338" parent="26" name="idphenotypes">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="339" parent="26" name="nom">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="340" parent="26" name="nom_view">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="341" parent="26" name="description">
+      <DataType>text|0</DataType>
+    </column>
+    <column id="342" parent="26" name="type">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="343" parent="26" name="querry">
+      <DataType>text|0</DataType>
+    </column>
+    <column id="344" parent="26" name="covariable_choosing_table">
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="345" parent="26" name="characteristic_table">
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="346" parent="26" name="Risk_on_rise">
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="347" parent="26" name="PRIMARY">
+      <ColNames>idphenotypes</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="348" parent="27" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="349" parent="27" name="symbol">
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="350" parent="27" name="approved">
+      <DataType>varchar(250)|0</DataType>
+    </column>
+    <index id="351" parent="27" name="index_genes">
+      <ColNames>symbol</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="352" parent="27" name="symbol">
+      <ColNames>symbol</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="353" parent="27" name="index_genes">
+      <ColNames>symbol</ColNames>
+      <UnderlyingIndexName>index_genes</UnderlyingIndexName>
+    </key>
+    <key id="354" parent="27" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="355" parent="27" name="symbol">
+      <ColNames>symbol</ColNames>
+      <UnderlyingIndexName>symbol</UnderlyingIndexName>
+    </key>
+    <column id="356" parent="28" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="357" parent="28" name="symbol">
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="358" parent="28" name="approved">
+      <DataType>varchar(250)|0</DataType>
+    </column>
+    <index id="359" parent="28" name="index_genes">
+      <ColNames>symbol</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="360" parent="28" name="symbol">
+      <ColNames>symbol</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="361" parent="28" name="index_genes">
+      <ColNames>symbol</ColNames>
+      <UnderlyingIndexName>index_genes</UnderlyingIndexName>
+    </key>
+    <key id="362" parent="28" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="363" parent="28" name="symbol">
+      <ColNames>symbol</ColNames>
+      <UnderlyingIndexName>symbol</UnderlyingIndexName>
+    </key>
+    <column id="364" parent="29" name="idusers">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="365" parent="29" name="nom">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="366" parent="29" name="note">
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="367" parent="29" name="PRIMARY">
+      <ColNames>idusers</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
