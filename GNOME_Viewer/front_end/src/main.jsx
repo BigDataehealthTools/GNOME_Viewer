@@ -25,6 +25,7 @@ under the License.*/
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Routes = require('./Routes.jsx');
+var ImageSrc=require('react-image');
 
 //Components
 var Header = require('./components/Header/Header.jsx');

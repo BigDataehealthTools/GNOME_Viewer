@@ -44,6 +44,7 @@ def adamGenomeViewer(request, chromosome, position, rsid, userWidth, userHeight)
     print request, chromosome, position, rsid
 
     params = "rsid=" + rsid + "&chromosome=" + chromosome + "&position=" + position;
+    print params
 
     data = urllib2.urlopen("http://ec2-52-35-68-107.us-west-2.compute.amazonaws.com:8000/matching?" + params).read()
 
