@@ -48,6 +48,11 @@
 3. Run this command. It will install all the dependencies in the 'package.json' file.
 
     npm install
+<<<<<<< HEAD
+=======
+    
+    npm install react-image --save
+>>>>>>> 298a140060ee882ba15350d65b6a79dbc9cd7afe
     
 4. Run this command. It will launch a watcher, which will update the file 'main.js' which is where all the front_end code is compressed into for the browser.
 

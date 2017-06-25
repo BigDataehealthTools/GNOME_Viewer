@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdd213aa-d227-4546-9df2-86ed40b4768b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GNOME_Viewer/public/img/GOAT - Copie.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GNOME_Viewer/public/img/GOAT.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GNOME_Viewer/public/img/GOAT.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GNOME_Viewer/front_end/src/components/Header/Header.jsx" afterPath="$PROJECT_DIR$/GNOME_Viewer/front_end/src/components/Header/Header.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-    </list>
+    <list default="true" id="bdd213aa-d227-4546-9df2-86ed40b4768b" name="Default" comment="" />
     <ignored path="GOAT_Genetic_Ouput_Analysis_Tool.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
