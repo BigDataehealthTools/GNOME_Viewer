@@ -24,6 +24,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
 from django.db import connection # Used to connect with the database
+from subprocess import call
 
 #--- Pandas ---#
 import pandas as pandas
@@ -45,9 +46,11 @@ def adamGenomeViewer(request, chromosome, position, rsid, userWidth, userHeight)
 
     params = "rsid=" + rsid + "&chromosome=" + chromosome + "&position=" + position;
     print params
-
-    data = urllib2.urlopen("http://ec2-52-35-68-107.us-west-2.compute.amazonaws.com:8000/matching?" + params).read()
-
+    matching(rsid,chromosome,position)
+    print "adam-submit"
+    #data = urllib2.urlopen("http://ec2-52-35-68-107.us-west-2.compute.amazonaws.com:8000/matching?" + params).read()
+    data = urllib2.urlopen("http://127.0.0.1:8000/matching?" + params).read()
+    print "open url"
     rsidArray = []
     rsidArray.append(json.loads(data))#[o['rsid'] for o in data]
 
@@ -91,6 +94,13 @@ def sqlGenomeViewer(data):
     )
 
     return HttpResponse(response)
+
+def matching(rsid,chromosome,position):
+    call(['rm', '-r','/Users/beatrizkanzki/Documents/GenomeViewer/result'])
+    call(['adam-submit','matching','/Users/beatrizkanzki/Documents/GenomeViewer/chr22/chr22-adam','/Users/beatrizkanzki/Documents/GenomeViewer/result',rsid])
+    print "Called"
+
+
 
 def getChromosomeBoundaries():
     chr_bounderies_dict={'chromosome':[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22],          #dictionnary with chromosome bounderies
