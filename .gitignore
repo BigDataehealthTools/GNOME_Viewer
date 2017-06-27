@@ -2,7 +2,7 @@
 # Created by https://www.gitignore.io/api/osx,python,django,node
 
 node_modules/*
-GOAT/front_end/node_modules/*
+GNOME_Viewer/front_end/node_modules/*
 
 ### Django ###
 *.log
